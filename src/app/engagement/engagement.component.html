@@ -1,0 +1,46 @@
+<app-home></app-home>
+<div class="posts">
+
+    <div class="add-post">
+        <input type="text" #UserText>
+
+        <button class="post-btn" (click)="userPost(UserText.value)">Post Now</button>
+        <button>Post Photo/Video </button>
+        <button>Add Event</button>
+
+
+
+    </div>
+
+
+
+
+    <div class="user-posts" [style.display]="postVisible?'block':'none'">
+
+        <h3>{{InputValue}}</h3>
+
+
+        <div class="react">
+
+            <div><span class="material-symbols-outlined" (click)="comment()">
+                    comment
+                </span>
+
+                <div class="comment"  [style.display]="CommentVisible?'inline-block':'none'">
+
+                    <input type="text"> <button>Submit</button>
+                </div>
+            </div>
+            <div><span class="material-symbols-outlined">
+                    thumb_up
+                </span></div>
+            <div><span class="material-symbols-outlined">
+                    share
+                </span></div>
+        </div>
+
+
+    </div>
+
+
+</div>

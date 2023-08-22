@@ -1,0 +1,42 @@
+.col-4{
+
+    
+    width: 500px;
+    cursor: pointer;
+
+}
+
+    
+.container-fluid h3{
+text-align: center;
+margin: 50px 10px;
+font-family: 'Dancing Script', cursive;
+font-size: 50px;
+color:  #4f0e67;
+text-shadow: 0 0 5px purple;
+
+}
+
+
+.row{
+    margin-top: 10px;
+    
+
+
+}
+
+.col-4 img {
+
+   
+    height: 300px;
+    
+}
+
+.card:hover{
+    background-color: purple;
+    color: white;
+    transform:translateY(5px)
+
+}
+
+

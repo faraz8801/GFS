@@ -7,13 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  isMenuOpen=false;
+
+
+  profileSettings=false
+  profile(){
+
+this.profileSettings=!this.profileSettings
+
+  }
   
-fun(){
-
-  this.isMenuOpen=!this.isMenuOpen
-
-}
 
 }
 

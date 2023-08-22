@@ -35,12 +35,13 @@
 .navbar li{
 
     list-style: none;
-    width:200px;    
+    width:100px;    
     text-align: center  ;
     margin: 10px;   
     
     padding: 10px 5px;
     background-color: blueviolet;
+    border-radius: 10px;
 
 
 
@@ -82,6 +83,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 2;
     
 }
 
@@ -92,6 +94,13 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact:hover{
+
+    background-color: red;
 }
 
 .user span{
@@ -103,8 +112,19 @@
 }
 
 .Directory:hover{
-    height: 50px;
+    height: 45px;
+    z-index: 2;
+  
     
+}
+
+.navbar li:hover{
+    background-color: red;
+}
+
+.messages, .notification, .profile{
+
+    cursor: pointer;
 }
 
 
@@ -114,10 +134,13 @@
     display: block;
     flex-direction: column;
     background: linear-gradient(blueviolet, purple);
-   
+    margin-top: 15px;
+  
     width: 200px;
     margin-left: -5px;
-    padding: 0 0 10px 10px;
+    padding:10px;
+    z-index: 2;
+    
     
 
 }
@@ -163,19 +186,21 @@
     }
     .center{
         height: 100px;
-        flex-direction:row;
+        flex-direction:column;
         
     
     }
 
     .navbar{
         flex-direction: column;
+    
         
        
     }
     .navbar li{
         
-        width: 150px;
+        width: 80px;
+        
         margin: 1px;
         height: 50px;
     
@@ -205,7 +230,74 @@
     margin-top: -34px;
     margin-left: 160px;
     background: linear-gradient(blueviolet, purple);
+    z-index: 2;
     
 
 
 }
+
+.navbar p {
+    display: none;
+    
+}
+
+
+/* Module name when hover usinf CSS */
+
+.Directory:hover p ,.engagement:hover p ,.financial:hover p {
+    display: flex;
+    position: absolute;
+    top: -8px;
+    width: 200px;
+    text-align:end;
+    color: white;
+
+    
+    justify-content: center;
+    
+}
+
+.active {
+    background-color: red;}
+
+
+   
+
+
+    .profile:hover{
+    color: blue;
+      
+    }
+
+    .profile .profile-items{
+
+        display: flex;
+        background:linear-gradient(blueviolet, purple);
+       
+        margin-top: 2px;
+        position: absolute;
+        margin-left: 10px;
+        width: 180px;
+        padding-top: 10px;
+        border-radius: 10px;
+        text-align:start;
+
+
+    }
+
+    .profile .profile-items a{
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    .profile .profile-items li{
+        list-style: none;
+        margin: 10px 0;
+    }
+
+    .profile .profile-items a:hover{
+
+        color: blue;
+    }
+    

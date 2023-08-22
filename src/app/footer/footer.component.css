@@ -22,9 +22,7 @@
     
 }
 .footer{
-position: fixed;
-bottom: 1px;
-height: 90px;  	
+  	
 width: 100%;
 color: white;
 display: flex;

@@ -9,6 +9,11 @@
 
 }
 
+.password{
+display: none;
+    
+}
+
 .col-5 h1 {
 
     font-size: 80px;
@@ -41,7 +46,7 @@
     height: 100vh;
 
 
-    display: flex;
+   
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
@@ -97,4 +102,23 @@
         justify-content: center;
     }
 
+}
+
+.otp-login{
+
+    
+}
+
+.enter-OTP{
+    margin: 10px;
+}
+
+.enter-OTP label , button{
+
+    margin: 10px;
+}
+.enter-OTP button{
+    padding: 5px;
+    border-radius: 10px;
+    
 }

@@ -1,5 +1,59 @@
 <div class="content">
-    <div class="container text-center">
+   
+    <div class="otp-login" [style.display]="passwordWindow?'none':'flex'">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-5">
+    
+                    <h1>
+                  
+    
+                        <img src="/src/assets/images/Logo.png" alt="">GFS
+                    </h1>
+                    <h3 >Welcome to GFS. <br> Connect, Share, Discover, and Prosper with Us!
+    
+    
+                    </h3>
+    
+    
+    
+                </div>
+                <div class="col-7">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address/Mobile Number for OTP</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                        </div>
+                        
+                        
+                        <button  type="button" class="btn btn-primary" (click)="enterOTP()" >Send OTP</button>
+                       
+                       
+                        <div class="enter-OTP" [style.display]="OTPFieldVisible?'block':'none'">
+
+
+                            <label for="">Enter OTP</label><input type="text">
+                            <button type="button" routerLink="/engagement" class= "bg-primary" >Login</button>
+                        </div>
+    
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-primary forgot" type="button">Resend OTP</button>
+                            <button  class="btn btn-primary forgot " type="button" (click)="passwordLogin()">Login with password</button>
+                        </div>
+    
+                    </form>
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+
+    </div>
+
+    <div class="container password text-center" [style.display]="passwordWindow?'flex':'none'">
         <div class="row">
             <div class="col-5">
 
@@ -30,12 +84,14 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Remember me</label>
                     </div>
-                    <button routerLink="home" type="submit" class="btn btn-primary">Log in</button>
+                    <button routerLink="/engagement" type="submit" class="btn btn-primary">Log in</button>
 
                     <div class="d-grid gap-2 d-md-block">
                         <button class="btn btn-primary forgot" type="button">Fogot Password?</button>
+                        
                         <button routerLink="registration" class="btn btn-primary forgot " type="button">Register Now!</button>
                     </div>
+                    <button class="btn btn-primary forgot" type="button"  (click)="passwordLogin()">Back to OTP Login</button>
 
                 </form>
             </div>
@@ -43,6 +99,7 @@
         </div>
 
     </div>
+
 
 
     
